@@ -1,0 +1,13 @@
+notebook
+
+bcrypt
+datasketch
+Flask
+ipywidgets
+numpy
+ocrmypdf
+pandas
+pdfplumber
+plotly
+PyPDF2
+send2trash
