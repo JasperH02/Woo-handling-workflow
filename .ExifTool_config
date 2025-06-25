@@ -1,0 +1,110 @@
+%Image::ExifTool::UserDefined = (
+    'Image::ExifTool::XMP::Main' => {
+        dc => {
+            SubDirectory => { TagTable => 'Image::ExifTool::UserDefined::dc' },
+        },
+        foi => {
+            SubDirectory => { TagTable => 'Image::ExifTool::UserDefined::foi' },
+        },
+        tooiwl => {
+            SubDirectory => { TagTable => 'Image::ExifTool::UserDefined::tooiwl' },
+        },
+    },
+);
+
+%Image::ExifTool::UserDefined::dc = (
+    GROUPS => { 0 => 'XMP', 1 => 'XMP-dc', 2 => 'Document' },
+    NAMESPACE => { 'dc' => 'http://purl.org/dc/elements/1.1/' },
+    WRITABLE => 'string',
+    dc_title => {
+        Writable => 'string',
+        Description => 'dc_title',
+    },
+    dc_description => {
+        Writable => 'string',
+        Description => 'dc_description',
+    },
+    dc_publisher => {
+        Writable => 'string',
+        Description => 'dc_publisher',
+    },
+    dc_date_year => {
+        Writable => 'string',
+        Description => 'dc_date_year',
+    },
+    dc_type => {
+        Writable => 'string',
+        Description => 'dc_type',
+    },
+    dc_source => {
+        Writable => 'string',
+        Description => 'dc_source',
+    },
+    dc_creator => {
+        Writable => 'string',
+        Description => 'dc_creator',
+    },
+);
+
+%Image::ExifTool::UserDefined::foi = (
+    GROUPS => { 0 => 'XMP', 1 => 'XMP-foi', 2 => 'Document' },
+    NAMESPACE => { 'foi' => 'http://example.com/ns/foi/' },
+    WRITABLE => 'string',
+    foi_publishedDate => {
+        Writable => 'string',
+        Description => 'foi_publishedDate',
+    },
+    foi_requestDate => {
+        Writable => 'string',
+        Description => 'foi_requestDate',
+    },
+    foi_decisionDate => {
+        Writable => 'string',
+        Description => 'foi_decisionDate',
+    },
+    foi_isAdjourned => {
+        Writable => 'string',
+        Description => 'foi_isAdjourned',
+    },
+    foi_requester => {
+        Writable => 'string',
+        Description => 'foi_requester',
+    },
+    foi_requestText => {
+        Writable => 'string',
+        Description => 'foi_requestText',
+    },
+    foi_decisionText => {
+        Writable => 'string',
+        Description => 'foi_decisionText',
+    },
+    foi_valuation => {
+        Writable => 'string',
+        Description => 'foi_valuation',
+    },
+    foi_linkedDossier => {
+        Writable => 'string',
+        Description => 'foi_linkedDossier',
+    },
+    foi_files => {
+        Writable => 'string',
+        Description => 'foi_files',
+    },
+    foi_extraMetadata => {
+        Writable => 'string',
+        Description => 'foi_extraMetadata',
+    },
+);
+
+%Image::ExifTool::UserDefined::tooiwl = (
+    GROUPS => { 0 => 'XMP', 1 => 'XMP-tooiwl', 2 => 'Document' },
+    NAMESPACE => { 'tooiwl' => 'http://example.com/ns/tooiwl/' },
+    WRITABLE => 'string',
+    tooiwl_topic => {
+        Writable => 'string',
+        Description => 'tooiwl_topic',
+    },
+);
+
+1; # einde config
+
